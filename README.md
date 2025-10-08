@@ -1,9 +1,12 @@
 # monitor-proc.bash
 Simple restart and api failure detector
-## Usage: `./monitor-proc.bash [executable_name] [api_url]`
+## Usage
+```
+./monitor-proc.bash [executable_name] [api_url]
+```
 Default values for parameters are defined in the script
 
-## Description:
+## Description
 Periodically checks whether the specified process is running and
 whether it's API is available.
 Logs process restarts and failed API requests.
