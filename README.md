@@ -1,4 +1,5 @@
-# monitor-proc.bash - Simple restart and api failure detector
+# monitor-proc.bash
+Simple restart and api failure detector
 ## Usage: `./monitor-proc.bash [executable_name] [api_url]`
 Default values for parameters are defined in the script
 
