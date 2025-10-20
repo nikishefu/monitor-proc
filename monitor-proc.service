@@ -1,10 +1,11 @@
 [Unit]
 Description=Simple restart and api failure detector
-After=network.target
+After=network-online.target
 
 [Service]
 Type=simple
 ExecStart=/usr/bin/env bash /usr/local/bin/monitor-proc.bash test https://test.com/monitoring/test/api
+User=monitor
 Restart=always
 RestartSec=5
 
